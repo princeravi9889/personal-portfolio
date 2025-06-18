@@ -24,15 +24,15 @@
         <section class="home" id="home">
             <div class="home-content">
                 <h3>Hello,It's Me</h3>
-                <h1>Shreya</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <h1>Ravi Sharma</h1>
+                <h3>And I'm a Software Engineer</h3>
                 <div class="social-media">
-                    <a href="https://github.com/shreya6360/codesite"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxs-envelope'></i></a>
+                    <a href="Portfolio Link"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:ravisharmajan03@gmail.com"><i class='bx bxs-envelope'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.linkedin.com/in/shreya-shreya-421886227"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="https://www.linkedin.com/in/ravi-sharma9889/"><i class='bx bxl-linkedin-square' ></i></a>
                 </div>
-                <a href="C:\Users\shrey\Downloads\B.-Software-Engineer.docx" class="btn">Download CV</a>
+                <a href="https://drive.google.com/file/d/1ijuX_nK9_7sFKbXmcJJK8u3QqGvFNUTU/view?usp=drive_link" class="btn">Download CV</a>
             </div>
             <div class="home-img">
                 <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/10/computer_engineer-compare-page.jpg" alt="">
@@ -44,9 +44,8 @@
             </div>
             <div class="about-content">
                 <h2 class="heading">About<span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>Frontend developer with experience building singlre-page web application and a knack for creating attractive user interfaces.
-                    skilled experience in javascript,HTML,CSS,PHP,BOOTSTRAP. </p>
+                <h3>Software Engineer</h3>
+                <p>Software Engineer with a strong foundation in designing scalable systems and developing robust software solutions. Proficient in object-oriented programming, data structures, and algorithms, with experience in languages such as Python, Java, and C++. </p>
                  <a href="#"class="btn">Read More</a>   
             </div>
         </section>
@@ -83,7 +82,7 @@
             <h2 class="heading">Latest<span>Project</span></h2>
             <div class="portfolio-container">
                 <div class="portfolio-box">
-                    <img src="C:\Users\shrey\Downloads\jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg"alt="">
+                    <img src="myproject/image/jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg"alt="">
                     <div class="portfolio-layer">
                         <h4>Perssonal Portfolio</h4>
                         <p>In this project I try making my own portfolio website for myself. Showcase my projects, my social media handles, my experience on the website.</p>
@@ -91,26 +90,10 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="C:\Users\shrey\Downloads\austin-poon-JO_S6ewBqAk-unsplash.jpg"alt="">
+                    <img src="myproject/image/austin-poon-JO_S6ewBqAk-unsplash.jpg"alt="">
                     <div class="portfolio-layer">
                         <h4>dynamics website Deployment in AWS</h4>
                         <p>In this project I try deployed dynamics website in AWS.so that we can add deleted the data by connecting to databases.</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="C:\Users\shrey\Downloads\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg"alt="">
-                    <div class="portfolio-layer">
-                        <h4>Iris flower detection</h4>
-                        <p>In this project I try detect the iris flower type by using machine learning predication model.And deployed in streamlit python</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="C:\Users\shrey\Downloads\kevin-canlas-QYHehJ9Iovs-unsplash.jpg"alt="">
-                    <div class="portfolio-layer">
-                        <h4>trafic analysis </h4>
-                        <p>In this project I try analysis the traffic by using java.</p>
                         <a href="#"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
@@ -132,11 +115,31 @@
                 <input type="submit" value="Send Message"class="btn">
             </form>
             <span id="msg"></span>
-        </section>
+            <!-- JavaScript to handle form submission -->
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
 
+            const formData = new FormData(this);
+
+            fetch('send_email.php', {
+            method: 'POST',
+            body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+            alert(data); // Feedback from server
+            })
+            .catch(error => {
+            alert("Something went wrong.");
+            console.error(error);
+            });
+            });
+        </script>
+        </section>
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2023 by Shreya | All Rights Reserved.</p>
+                <p>Copyright &copy; 2023 by Ravi | All Rights Reserved.</p>
             </div>
             <div class="footer-iconTop">
                 <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
